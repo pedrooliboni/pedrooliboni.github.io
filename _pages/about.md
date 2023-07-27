@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hello! I am an economics PhD student UChicago.
+Hello! I am an economics PhD student at UChicago.
 
 I'm interested in global priorities research, existential risks, economics of science and innovation, and microeconomic theory.
 
