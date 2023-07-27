@@ -83,11 +83,11 @@ author:
   name             : "Pedro Oliboni"
   avatar           : "profile.png"
   bio              : "PhD student at UChicago"
-  location         : 
+  location         : "Chicago, IL"
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            :
+  email            : "padamioliboni@uchicago.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "pedrooliboni"
+  github           : #"pedrooliboni"
   google_plus      :
   keybase          :
   instagram        :
