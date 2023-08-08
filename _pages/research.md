@@ -22,4 +22,6 @@ _Peer-reviewed publications_
 
 ["Normative Implications of Reductionism about Personal Identity"](https://philpapers.org/rec/OLINIO)
 
+## Other
+"Assessing the Role of Travel Networks in Pandemic Risk from Emerging Infectious Diseases"
 
