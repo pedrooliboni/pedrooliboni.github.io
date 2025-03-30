@@ -9,6 +9,6 @@ redirect_from:
 ---
 Hello! I am an economics PhD student at UChicago.
 
-I'm interested in price theory, innovation, urban, public, existential risks, and global priorities research.
+I use methods from price theory and macroeconomics to study economic growth, public economics, and existential risks.
 
 Previously: predoc at the Global Priorities Institute, Master's at Bocconi University, Math & Philosophy at The College of Wooster.
