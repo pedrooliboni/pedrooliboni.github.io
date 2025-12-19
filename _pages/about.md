@@ -9,6 +9,6 @@ redirect_from:
 ---
 Hello! I am an economics PhD student at UChicago.
 
-I use methods from price theory and macroeconomics to study economic growth, public economics, and existential risks.
+I study the macroeconomic causes and consequences of regulations. I use methods from price theory, macroeconomics, industrial organization, and public choice.
 
 Previously: predoc at the Global Priorities Institute, Master's at Bocconi University, Math & Philosophy at The College of Wooster.
