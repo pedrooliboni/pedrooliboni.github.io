@@ -6,9 +6,7 @@ author_profile: true
 redirect_from: 
   - /real_micro.html
 ---
-## Real Micro
-Diverse real life economic activity.
-___
+Diverse, real life economic activity.
 
 ![Image1](/files/IMG_9749.jpeg)
 Meat skewers by the main square of Caxias do Sul, Brazil — 2025/12/26.
