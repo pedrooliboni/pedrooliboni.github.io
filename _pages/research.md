@@ -15,10 +15,11 @@ redirect_from:
 (with Ross Tieman and Siméon Campos)
 _Risk Analysis Best Paper for 2025._
 
-### Resting papers
+### Other
+##### Resting papers
 ["The Impact of Research Grants on Publications and Patents Across Disciplines"](https://conference.nber.org/conf_papers/f190062.pdf) 
 (with Jérôme Adda and Marco Ottaviani)
 _Presented at [NBER Summer Institute on Science of Science Funding](https://www.nber.org/conferences/si-2023-science-science-funding), 2023._
  
-### Resources
+##### Resources
 ["Fundamentals of Global Priorities Research in Economics Syllabus"](https://forum.effectivealtruism.org/posts/g9gfXhNhLdJxSFBLW/fundamentals-of-global-priorities-research-in-economics)
