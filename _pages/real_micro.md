@@ -6,7 +6,7 @@ author_profile: true
 redirect_from: 
   - /real_micro.html
 ---
-Diverse, real life economic activity.
+People having a go trying to get the gains from trade to be had.
 
 ![Image1](/files/IMG_9749.jpeg)
 Meat skewers by the main square of Caxias do Sul, Brazil — 2025/12/26.
