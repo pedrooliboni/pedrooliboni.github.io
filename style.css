@@ -54,9 +54,11 @@ p { margin: 0; }
 /* Reserve each word's bold width (hidden bold copy from data-text) so nothing moves when the current page is bold. */
 .site-nav a::after { content: attr(data-text); display: block; height: 0; overflow: hidden; visibility: hidden; font-weight: 700; }
 
-/* ---- home: statement top-aligned with the portrait, one blank line, then work in progress; portrait + details right ---- */
+/* ---- home: portrait + details left; statement top-aligned with the portrait, one blank line, then work in progress, right ---- */
 
-.intro { display: grid; grid-template-columns: 1fr max-content; column-gap: 2.5rem; align-items: start; }
+.intro { display: grid; grid-template-columns: max-content 1fr; column-gap: 2.5rem; align-items: start; }
+.card { grid-column: 1; grid-row: 1; }
+.intro-text { grid-column: 2; grid-row: 1; }
 .statement { margin: 0 0 1.5rem; text-wrap: balance; }
 #wip { margin-bottom: 0; }
 .card { margin: 0; }
@@ -65,7 +67,8 @@ p { margin: 0; }
 
 @media (max-width: 560px) {
   .intro { grid-template-columns: 1fr; }
-  .card { order: -1; margin-bottom: 1.5rem; }
+  .card { grid-column: 1; grid-row: 1; margin-bottom: 1.5rem; }
+  .intro-text { grid-column: 1; grid-row: 2; }
 }
 
 /* ---- sections and headings (all one size; bold is the only distinction) ---- */
