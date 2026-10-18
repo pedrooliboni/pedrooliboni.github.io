@@ -76,16 +76,11 @@ p { margin: 0; }
 /* ---- sections and headings (all one size; bold is the only distinction) ---- */
 
 section { margin-bottom: 2rem; }
-h2, h3 { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; }
-section > h2:first-child, section > h3:first-child { margin-top: 0; }
+h2 { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; }
+section > h2:first-child { margin-top: 0; }
 .lede { margin: 0 0 1rem; }
 
-/* ---- entries: dash-bulleted with a hanging indent ---- */
+/* ---- entries: title in quotation marks (co-authors in parentheses), then one line of details and links ---- */
 
-.entry { position: relative; padding-left: 1.1rem; margin: 0 0 0.6rem; }
-.entry::before { content: "-"; position: absolute; left: 0; }
-.entry.wip { padding-left: 0; }
-.entry.wip::before { content: none; }  /* work in progress: no dash, title in quotation marks instead */
-.entry .venue { font-style: italic; }
-.entry .links a + a::before { content: "\00b7"; color: var(--fg); font-weight: 400; margin: 0 0.6rem; }
-
+.entry { margin: 0 0 0.6rem; }
+.entry .meta a + a::before { content: "\00b7"; color: var(--fg); font-weight: 400; margin: 0 0.6rem; }
