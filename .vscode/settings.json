@@ -1,0 +1,37 @@
+{
+  "// --- HOW TO USE ---": "Open this repo as the VS Code workspace, open cv-source/main.tex, build with Cmd+Option+B. Aux files go to cv-source/build/; the finished PDF is copied to files/Oliboni_CV.pdf, which is what the website links to. Then commit and push.",
+
+  "latex-workshop.latex.outDir": "%DIR%/build",
+  "latex-workshop.latex.autoClean.run": "never",
+  "latex-workshop.view.pdf.viewer": "tab",
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex-build",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-output-directory=%DIR%/build",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "publish-pdf",
+      "command": "bash",
+      "args": ["-c", "cp '%DIR%/build/%DOCFILE%.pdf' '%WORKSPACE_FOLDER%/files/Oliboni_CV.pdf' && echo 'publish-pdf: copied to files/Oliboni_CV.pdf'"],
+      "env": {}
+    }
+  ],
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdflatex x2 -> publish",
+      "tools": ["pdflatex-build", "pdflatex-build", "publish-pdf"]
+    }
+  ],
+
+  "latex-workshop.latex.recipe.default": "pdflatex x2 -> publish"
+}
