@@ -2,30 +2,16 @@
 
 /* Source Sans 3 (the web release of Source Sans Pro), self-hosted, variable weight.
    Mirrors the LaTeX setup \usepackage[default,light]{sourcesanspro}: light body, semibold emphasis. */
-@font-face {
-  font-family: "Source Sans 3";
-  font-style: normal;
-  font-weight: 200 900;
-  font-display: swap;
-  src: url("fonts/SourceSans3-Variable.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Source Sans 3";
-  font-style: italic;
-  font-weight: 200 900;
-  font-display: swap;
-  src: url("fonts/SourceSans3-VariableItalic.woff2") format("woff2");
-}
 
 :root {
   --bg: #ffffff;
   --fg: #1a1a1a;
   --maroon: #800000;       /* UChicago maroon: the only color on the site, always bold */
-  --font: "Source Sans 3", "Source Sans Pro", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font: Arial, Helvetica, sans-serif;
   --measure: 40rem;
 }
 
-/* One font size everywhere. Three text styles only: normal (300), bold (600), bold maroon (links).
+/* One font size everywhere. Three text styles only: normal (400), bold (700), bold maroon (links).
    No grey, no rules. */
 
 * { box-sizing: border-box; }
@@ -37,16 +23,16 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-family: var(--font);
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .wrap { max-width: var(--measure); margin: 0 auto; padding: 2.5rem 1rem 4rem; }
 
-a { color: var(--maroon); font-weight: 600; text-decoration: none; }
+a { color: var(--maroon); font-weight: 700; text-decoration: none; }
 a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
-b, strong { font-weight: 600; }
+b, strong { font-weight: 700; }
 p { margin: 0; }
 
 /* ---- header / nav ---- */
@@ -59,14 +45,14 @@ p { margin: 0; }
   gap: 0.5rem 1.5rem;
   margin-bottom: 3rem;
 }
-.site-header .brand { color: var(--fg); font-weight: 600; }
+.site-header .brand { color: var(--fg); font-weight: 700; }
 .site-header .brand:hover { text-decoration: none; }
 .site-nav { display: flex; gap: 1.5rem; }
-.site-nav a { color: var(--fg); font-weight: 300; }
+.site-nav a { color: var(--fg); font-weight: 400; }
 .site-nav a:hover, .site-nav a:focus-visible { text-decoration: none; }  /* nav links give no hover response at all */
-.site-nav a[aria-current="page"] { font-weight: 600; }
+.site-nav a[aria-current="page"] { font-weight: 700; }
 /* Reserve each word's bold width (hidden bold copy from data-text) so nothing moves when the current page is bold. */
-.site-nav a::after { content: attr(data-text); display: block; height: 0; overflow: hidden; visibility: hidden; font-weight: 600; }
+.site-nav a::after { content: attr(data-text); display: block; height: 0; overflow: hidden; visibility: hidden; font-weight: 700; }
 
 /* ---- home: statement top-aligned with the portrait, one blank line, then work in progress; portrait + details right ---- */
 
@@ -85,7 +71,7 @@ p { margin: 0; }
 /* ---- sections and headings (all one size; bold is the only distinction) ---- */
 
 section { margin-bottom: 2rem; }
-h2, h3 { font-size: 1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+h2, h3 { font-size: 1rem; font-weight: 700; margin: 1.5rem 0 0.5rem; }
 section > h2:first-child, section > h3:first-child { margin-top: 0; }
 .lede { margin: 0 0 1rem; }
 
@@ -94,5 +80,5 @@ section > h2:first-child, section > h3:first-child { margin-top: 0; }
 .entry { position: relative; padding-left: 1.1rem; margin: 0 0 0.6rem; }
 .entry::before { content: "-"; position: absolute; left: 0; }
 .entry .venue { font-style: italic; }
-.entry .links a + a::before { content: "\00b7"; color: var(--fg); font-weight: 300; margin: 0 0.6rem; }
+.entry .links a + a::before { content: "\00b7"; color: var(--fg); font-weight: 400; margin: 0 0.6rem; }
 

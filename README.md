@@ -1,6 +1,6 @@
 # pedrooliboni.com
 
-Personal website. Hand-written HTML and CSS, no build step, no external scripts or fonts.
+Personal website. Hand-written HTML and CSS, no build step, no external scripts, no web fonts (system Arial, as on Chad Jones's site).
 Served by GitHub Pages from the `master` branch root (`.nojekyll` disables Jekyll processing).
 
 - `index.html` — home: one-line statement and work in progress
@@ -8,7 +8,6 @@ Served by GitHub Pages from the `master` branch root (`.nojekyll` disables Jekyl
 - `writing.html` — essays (Substack + PDF)
 - `resources.html` — syllabi and, when ready, archive scans of others' essays
 - `style.css` — the only stylesheet
-- `fonts/` — Source Sans 3 (Source Sans Pro), self-hosted variable woff2, OFL-licensed
 - `files/` — `Oliboni_CV.pdf` (built from `cv-source/`, never edited by hand) and essay PDFs
 - `cv-source/` — LaTeX source of the CV (`main.tex`) and `build.sh`; `build/` is git-ignored
 - `.vscode/settings.json` — LaTeX Workshop recipe: Cmd+Option+B on `cv-source/main.tex` rebuilds and copies the PDF into `files/`
