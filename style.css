@@ -76,9 +76,16 @@ b, strong { font-weight: 600; }
 .site-nav a:hover { text-decoration: none; font-weight: 600; }
 .site-nav a[aria-current="page"] { font-weight: 600; }
 
-/* ---- home: portrait, details, statement, work in progress, stacked ---- */
+/* ---- home: statement and work in progress on the left, portrait with details on the right.
+   The statement's first line sits level with the top of the photo. ---- */
 
-.card { margin: 0 0 2rem; }
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 210px;
+  gap: 0 2.5rem;
+  align-items: start;
+}
+.card { margin: 0; }
 .card img { display: block; width: 210px; height: auto; }
 .card figcaption { margin-top: 0.7rem; font-size: 0.9rem; line-height: 1.5; }
 
@@ -86,9 +93,15 @@ b, strong { font-weight: 600; }
   font-size: 1.15rem;
   font-weight: 300;
   line-height: 1.45;
-  margin: 0 0 2.5rem;
-  max-width: 32rem;
+  margin: -0.3rem 0 2.25rem;   /* pulls the cap height of line one level with the photo's top edge */
   text-wrap: balance;
+}
+.intro-text section { margin-bottom: 0; }
+
+@media (max-width: 560px) {
+  .intro { grid-template-columns: 1fr; gap: 1.5rem 0; }
+  .card { order: -1; }
+  .statement { margin-top: 0; }
 }
 
 /* ---- sections ---- */
