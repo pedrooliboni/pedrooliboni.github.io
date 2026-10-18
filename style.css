@@ -84,6 +84,8 @@ section > h2:first-child, section > h3:first-child { margin-top: 0; }
 
 .entry { position: relative; padding-left: 1.1rem; margin: 0 0 0.6rem; }
 .entry::before { content: "-"; position: absolute; left: 0; }
+.entry.wip { padding-left: 0; }
+.entry.wip::before { content: none; }  /* work in progress: no dash, title in quotation marks instead */
 .entry .venue { font-style: italic; }
 .entry .links a + a::before { content: "\00b7"; color: var(--fg); font-weight: 400; margin: 0 0.6rem; }
 
