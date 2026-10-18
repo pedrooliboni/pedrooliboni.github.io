@@ -8,7 +8,7 @@
   --fg: #1a1a1a;
   --maroon: #800000;       /* UChicago maroon: the only color on the site, always bold */
   --font: Arial, Helvetica, sans-serif;
-  --measure: 40rem;
+  --measure: 640px;
 }
 
 /* One font size everywhere. Three text styles only: normal (400), bold (700), bold maroon (links).
@@ -16,7 +16,7 @@
 
 * { box-sizing: border-box; }
 
-html { font-size: 13pt; -webkit-text-size-adjust: 100%; scrollbar-gutter: stable; }  /* scrollbar space is reserved on every page, so the column never shifts sideways */
+html { font-size: 13px; -webkit-text-size-adjust: 100%; scrollbar-gutter: stable; }  /* scrollbar space is reserved on every page, so the column never shifts sideways */
 
 body {
   margin: 0;
