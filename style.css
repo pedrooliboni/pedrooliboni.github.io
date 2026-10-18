@@ -59,7 +59,7 @@ p { margin: 0; }
 .intro { display: grid; grid-template-columns: max-content 1fr; column-gap: 2.5rem; align-items: start; }
 .card { grid-column: 1; grid-row: 1; }
 .intro-text { grid-column: 2; grid-row: 1; }
-.statement { margin: 0 0 1.5rem; text-wrap: balance; }
+.statement { margin: 0 0 1.5rem; }
 #wip { margin-bottom: 0; }
 .card { margin: 0; }
 .card img { display: block; width: 158px; height: auto; }
