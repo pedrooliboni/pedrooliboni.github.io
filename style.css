@@ -63,7 +63,7 @@ p { margin: 0; }
 .site-header .brand:hover { text-decoration: none; }
 .site-nav { display: flex; gap: 1.5rem; }
 .site-nav a { color: var(--fg); font-weight: 300; }
-.site-nav a:hover { text-decoration: none; font-weight: 600; }
+.site-nav a:hover, .site-nav a:focus-visible { text-decoration: underline; }  /* never change weight on hover: it shifts the layout */
 .site-nav a[aria-current="page"] { font-weight: 600; }
 
 /* ---- home: statement top-aligned with the portrait, one blank line, then work in progress; portrait + details right ---- */
