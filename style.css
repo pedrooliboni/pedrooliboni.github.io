@@ -33,7 +33,6 @@ body {
 a { color: var(--maroon); font-weight: 400; text-decoration: none; }  /* every link: maroon, regular weight */
 a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
 b, strong { font-weight: 700; }
-a.plain { color: var(--fg); font-weight: 400; }  /* a link that reads as ordinary text (e.g. a co-author name) */
 p { margin: 0; }
 
 /* ---- header / nav ---- */
