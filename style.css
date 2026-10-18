@@ -1,0 +1,168 @@
+/* pedrooliboni.com — hand-written stylesheet, no external dependencies */
+
+/* Source Sans 3 (the web release of Source Sans Pro), self-hosted, variable weight.
+   Mirrors the LaTeX setup \usepackage[default,light]{sourcesanspro}: light body, semibold emphasis. */
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/SourceSans3-Variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/SourceSans3-VariableItalic.woff2") format("woff2");
+}
+
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #6e6e6e;
+  --maroon: #800000;       /* UChicago maroon: the only color on the site */
+  --rule: #e6e6e6;
+  --font: "Source Sans 3", "Source Sans Pro", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --measure: 40rem;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 18px; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2.5rem 1rem 4rem;
+}
+
+a { color: var(--maroon); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 1px; }
+
+/* ---- header / nav ---- */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2.75rem;
+}
+
+.site-header .brand { color: var(--fg); font-weight: 400; font-size: 1.1rem; }
+.site-header .brand:hover { text-decoration: none; }
+
+.site-nav {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  gap: 1.5rem;
+}
+.site-nav a { color: var(--muted); }
+.site-nav a:hover { color: var(--fg); text-decoration: none; }
+.site-nav a[aria-current="page"] { color: var(--fg); border-bottom: 1px solid var(--maroon); padding-bottom: 2px; }
+
+/* ---- intro block (home) ----
+   One dominant statement beside the portrait; affiliation and contact sit quietly under the portrait. */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 210px;
+  gap: 0 2.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+.intro .statement {
+  font-size: 1.25rem;
+  font-weight: 200;
+  line-height: 1.4;
+  margin: 0.25rem 0 2.5rem;
+  text-wrap: balance;
+}
+.intro-text section { margin-bottom: 0; }
+.intro .card { margin: 0; }
+.intro .card img {
+  display: block;
+  width: 210px;
+  height: auto;
+}
+.intro .card figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.links a + a::before {
+  content: "\00b7";
+  color: var(--muted);
+  margin: 0 0.6rem;
+}
+
+@media (max-width: 560px) {
+  .intro { grid-template-columns: 1fr; gap: 1.5rem 0; }
+  .intro .card img { width: 180px; }
+  .intro .statement { font-size: 1.15rem; }
+}
+
+/* ---- sections ---- */
+
+section { margin-bottom: 3rem; }
+
+h2 {
+  font-weight: 400;
+  font-size: 1.35rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin: 2rem 0 0.9rem;
+}
+h2 + h3 { margin-top: 0; }
+
+.lede { color: var(--muted); margin: -0.5rem 0 1.5rem; }
+
+/* ---- paper / essay entries ---- */
+
+.entry { margin: 0 0 1.3rem; }
+.entry .title { font-weight: 400; font-size: 1.05rem; margin: 0; }
+.entry .title a { color: var(--fg); }
+.entry .title a:hover { color: var(--maroon); text-decoration: none; }
+.entry .with { margin: 0.05rem 0 0; color: var(--muted); }
+.entry .venue { margin: 0.05rem 0 0; font-style: italic; }
+.entry .note { margin: 0.05rem 0 0; font-size: 0.9rem; }
+.entry .links { margin: 0.25rem 0 0; font-size: 0.9rem; }
+.entry .date { font-size: 0.8rem; color: var(--muted); margin: 0 0 0.05rem; }
+
+/* ---- footer ---- */
+
+.site-footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.site-footer a { color: var(--muted); }
+.site-footer a:hover { color: var(--maroon); }
