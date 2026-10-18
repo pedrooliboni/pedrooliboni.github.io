@@ -1,7 +1,8 @@
 {
-  "// --- HOW TO USE ---": "Open this repo as the VS Code workspace, open cv-source/main.tex, build with Cmd+Option+B. Aux files go to cv-source/build/; the finished PDF is copied to files/Oliboni_CV.pdf, which is what the website links to. Then commit and push.",
+  "// --- HOW TO USE ---": "Open this repo as the VS Code workspace, open cv-source/main.tex, saving main.tex (or Cmd+Option+B) rebuilds it. Aux files go to cv-source/build/; the finished PDF is copied to files/Oliboni_CV.pdf, which is what the website links to. Then commit and push.",
 
   "latex-workshop.latex.outDir": "%DIR%/build",
+  "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.autoClean.run": "never",
   "latex-workshop.view.pdf.viewer": "tab",
 
