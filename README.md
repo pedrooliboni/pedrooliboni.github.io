@@ -6,8 +6,7 @@ Served by GitHub Pages from the `master` branch root (`.nojekyll` disables Jekyl
 - `index.html` — home: one-line statement and work in progress
 - `research.html` — full research list
 - `writing.html` — essays (Substack + PDF)
-- `resources.html` — syllabi, games, and, when ready, archive scans of others' essays
-- `games/face-room/` — built copy of the Face Room game. Do not edit by hand: it is generated from the `experimental-games` repo with `npm run publish-site` (in `games/face-room/`). The exception to "no external scripts": the game page loads its face tracker from jsDelivr/Google and uses the public PeerJS server to connect players; all play happens in visitors' browsers, peer to peer.
+- `resources.html` — syllabi and, when ready, archive scans of others' essays
 - `style.css` — the only stylesheet
 - `files/` — `Oliboni_CV.pdf` (built from `cv-source/`, never edited by hand) and essay PDFs
 - `cv-source/` — LaTeX source of the CV (`main.tex`), `build.sh`, and `.latexmkrc` (makes any latexmk build, e.g. LaTeX Workshop's default, copy the PDF into `files/`); `build/` is git-ignored
