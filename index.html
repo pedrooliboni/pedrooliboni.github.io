@@ -33,14 +33,20 @@
 
         <section id="wip">
           <h2>Work in progress</h2>
-        
-          <div class="entry">
-            <p class="title">“Distributional Incidence of Occupational Licensing”</p>
-          </div>
-        
-          <div class="entry">
-            <p class="title">“Regulatory Capture and Superstars: Lobbying, Innovation, and Industry Dynamics” (with <a href="https://dariamatviienko.com/">Daria Matviienko</a>)</p>
-          </div>
+          <!-- Filled at load from #wip-entries in research.html. Edit the list there, not here. -->
+          <div id="wip-entries"></div>
+          <noscript><p><a href="/research.html">See the research page</a></p></noscript>
+          <script>
+            fetch('/research.html')
+              .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+              .then(function (html) {
+                var src = new DOMParser().parseFromString(html, 'text/html').getElementById('wip-entries');
+                if (src) document.getElementById('wip-entries').innerHTML = src.innerHTML;
+              })
+              .catch(function () {
+                document.getElementById('wip-entries').innerHTML = '<p><a href="/research.html">See the research page</a></p>';
+              });
+          </script>
         </section>
       </div>
       <figure class="card">
